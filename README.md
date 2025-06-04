@@ -21,6 +21,8 @@ HS Dev Console transforms your game into a controllable, scriptable environment.
 
 ## 🚀 Installation
 
+Video: https://youtu.be/ijOLUY7A5RE
+
 ### Prerequisites
 1. Stride Engine 4.2.0.2381 or newer
 2. **Happenstance Stride Engine Core** (required - install first)
