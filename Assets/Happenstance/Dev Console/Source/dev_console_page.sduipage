@@ -1,0 +1,163 @@
+!UIPageAsset
+Id: e57146fa-d5cc-4b58-832d-9afde81625b4
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! fed06728-64f0-4f23-8128-8e452dc6c11c
+    Parts:
+        -   UIElement: !ImageElement
+                Id: 0bd95750-ffeb-4b44-8349-02868e158c70
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 500.58826
+                Height: 35.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Bottom
+                Margin: {Left: 15.0, Bottom: 30.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: inputBackground
+                Source: !SpriteFromSheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    CurrentFrame: 2
+                Color: {R: 255, G: 255, B: 255, A: 255}
+                StretchType: Fill
+        -   UIElement: !ImageElement
+                Id: 0feea971-4187-46a0-a0fa-b07be0c3abef
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 610.0
+                Height: 229.42989
+                HorizontalAlignment: Left
+                VerticalAlignment: Bottom
+                Margin: {Left: 15.0, Bottom: 68.285034}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Console Window
+                Source: !SpriteFromSheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    CurrentFrame: 3
+                Color: {R: 255, G: 255, B: 255, A: 255}
+                StretchType: Fill
+        -   UIElement: !TextBlock
+                Id: 3ce371cd-15d2-4e6a-8034-939dcadbe4a7
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Submit
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 18.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                OutlineColor: {R: 0, G: 0, B: 0, A: 255}
+                OutlineThickness: 0.0
+        -   UIElement: !ScrollViewer
+                Id: 4e3e033b-daf0-4bd2-8650-5c2995560452
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 610.0
+                Height: 229.42987
+                HorizontalAlignment: Left
+                VerticalAlignment: Bottom
+                Margin: {Left: 15.0, Bottom: 69.285}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: consoleScroll
+                Padding: {Left: 10.0, Top: 10.0}
+                ScrollBarColor: {R: 255, G: 255, B: 255, A: 255}
+                Content: !StackPanel ref!! 74c1d984-319f-4b29-bee0-95953273bc27
+        -   UIElement: !StackPanel
+                Id: 74c1d984-319f-4b29-bee0-95953273bc27
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: consoleStack
+                Children: {}
+        -   UIElement: !EditText
+                Id: 8efa8fbc-8621-49f2-8f7b-1d06282b24b5
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                ClipToBounds: true
+                DrawLayerNumber: 5
+                CanBeHitByUser: true
+                Width: 500.58826
+                Height: 35.285034
+                HorizontalAlignment: Left
+                VerticalAlignment: Bottom
+                Margin: {Left: 15.0, Bottom: 30.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: consoleInput
+                Padding: {Left: 8.0, Top: 4.0, Right: 8.0, Bottom: 8.0}
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 0, G: 0, B: 0, A: 255}
+                ActiveImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 3
+                InactiveImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 4
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 5
+                CaretColor: {R: 240, G: 240, B: 240, A: 255}
+                CaretWidth: 1.0
+                SelectionColor: {R: 240, G: 240, B: 240, A: 255}
+                IMESelectionColor: {R: 240, G: 255, B: 240, A: 255}
+                CaretFrequency: 1.0
+        -   UIElement: !Button
+                Id: c189ad4e-1d40-4184-a586-8d1d26acfaca
+                DependencyProperties: {}
+                BackgroundColor: {R: 15, G: 14, B: 14, A: 0}
+                DrawLayerNumber: 2
+                Width: 109.412
+                Height: 35.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Bottom
+                Margin: {Left: 515.588, Bottom: 30.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: submitButton
+                Content: !TextBlock ref!! 3ce371cd-15d2-4e6a-8034-939dcadbe4a7
+                PressedImage: !SpriteFromSheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    CurrentFrame: 3
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    CurrentFrame: 3
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    CurrentFrame: 3
+        -   UIElement: !Grid
+                Id: fed06728-64f0-4f23-8128-8e452dc6c11c
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    af4a69270d4b834e0bbc9522f1173d39: !ImageElement ref!! 0feea971-4187-46a0-a0fa-b07be0c3abef
+                    8220fb7c28c8a8219c7a083723d55ebb: !ScrollViewer ref!! 4e3e033b-daf0-4bd2-8650-5c2995560452
+                    ec77db0c9d934a7c67c334b39d779f20: !ImageElement ref!! 0bd95750-ffeb-4b44-8349-02868e158c70
+                    9650484785fe3273fe42d0b0b5e22c2c: !EditText ref!! 8efa8fbc-8621-49f2-8f7b-1d06282b24b5
+                    dbfaeb421746bf21ffd2acce086d4486: !Button ref!! c189ad4e-1d40-4184-a586-8d1d26acfaca
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}

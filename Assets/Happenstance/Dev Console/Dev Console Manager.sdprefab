@@ -1,0 +1,43 @@
+!PrefabAsset
+Id: 7285db21-781a-4f48-af5d-ad064bc3d7df
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 454fa16d-859b-4776-a6b4-5c9374f7a075
+    Parts:
+        -   Entity:
+                Id: 454fa16d-859b-4776-a6b4-5c9374f7a075
+                Name: Dev Console Manager
+                Components:
+                    59c17e2ae7f9eee58dbb9b9646e77568: !TransformComponent
+                        Id: 894b7500-6eb0-4d7f-ba25-05b0cf4a01a7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            8c813224184505bbbe9896103afa139d: ref!! a9c46b49-4bd1-4959-a648-5ce432eace67
+                    eae540219a4858089b5bc9d939ecf027: !Happenstance.SE.DevConsole.ConsoleManager
+                        Id: 585d0d09-4505-4689-a971-dd232a8db0da
+                        StartDisabled: false
+                    408ce948517e7c0d652c45e18a379a20: ~(Deleted)
+        -   Entity:
+                Id: d14e1602-f4bd-4f16-a264-e210b9bd3e21
+                Name: DevConsoleUI
+                Components:
+                    aaf6f90586685888f14e1c72b6bd0e84: !TransformComponent
+                        Id: a9c46b49-4bd1-4959-a648-5ce432eace67
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    160412c9361dbc87b58f91ff7246d050: !UIComponent
+                        Id: 6c0f0171-0213-4eaf-a85b-abdae232192b
+                        Enabled: false
+                        Page: e57146fa-d5cc-4b58-832d-9afde81625b4:Happenstance/Dev Console/Source/Dev Console
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    f49490563262fb53ed9f60700f450ebe: !Happenstance.SE.DevConsole.ConsoleUI
+                        Id: 838c14a2-aaa5-400c-89cc-94e3c492edc4
+                        StartDisabled: false
+                    8d959dd498e88e6d92ef75aef2db651e: ~(Deleted)
