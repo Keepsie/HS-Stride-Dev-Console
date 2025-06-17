@@ -21,18 +21,19 @@ HS Dev Console transforms your game into a controllable, scriptable environment.
 
 ## 🚀 Installation
 
-Video: https://youtu.be/ijOLUY7A5RE
+### Recommended: One-Click Installation
+1. **Download [HS Stride Packer](https://github.com/Keepsie/HS-Stride-Packer)**
+2. **Download** this library's `.stridepackage` file from [Releases](https://github.com/Keepsie/HS-Stride-Dev-Console/releases)
+3. **Import** using HS Stride Packer - everything installs automatically!
+
+### Alternative: Manual Installation
+- Code is open source - you can still copy files manually if preferred
+- See legacy installation instructions 
+- HS Stride Packer handles all dependencies and setup automatically
 
 ### Prerequisites
-1. Stride Engine 4.2.0.2381 or newer
-2. **Happenstance Stride Engine Core** (required - install first)
-
-### Quick Setup
-1. **Install Dependencies:** Download and install [Happenstance Stride Engine Core](https://github.com/Keepsie/HS-Stride-Engine-Core) first (*REQUIRED*)
-2. **Copy Code:** Add DevConsole scripts to `Code/Happenstance/DevConsole/`  
-3. **Copy Assets:** Add DevConsole assets to `Assets/Happenstance/DevConsole/`
-4. **Scene Setup:** Drag the ConsoleManager prefab into your scene
-5. **Test:** Press `` ` `` (backtick) to open console, type `help`
+- Stride Engine 4.2.0.2381 or newer
+- HS Stride Packer (for easy installation)
 
 ### ⚠️ IMPORTANT: Input Integration
 
