@@ -1,3 +1,4 @@
+# HS Stride Dev Console
 A in-game command-line interface for Stride Engine that enables custom commands, automated scripting, debugging workflows, and rapid development iteration.
 
 ## 🎯 Overview
