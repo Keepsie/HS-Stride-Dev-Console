@@ -21,7 +21,7 @@ namespace Happenstance.SE.DevConsole
         private ScriptExecutor _scriptExecutor;
         private PredefinedCommands _predefinedCommands;
 
-        public string ConsoleVersion { get; } = "1.0.0";
+        public string ConsoleVersion { get; } = "1.1.0";
         public bool IsDebugBuild { get; private set; }
 
         public event Action<string, MessageType> OnConsoleOutput;

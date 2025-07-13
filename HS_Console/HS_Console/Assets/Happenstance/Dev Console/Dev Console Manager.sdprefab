@@ -20,6 +20,7 @@ Hierarchy:
                     eae540219a4858089b5bc9d939ecf027: !Happenstance.SE.DevConsole.ConsoleManager
                         Id: 585d0d09-4505-4689-a971-dd232a8db0da
                         StartDisabled: false
+                        CollisionDetection: false
                     408ce948517e7c0d652c45e18a379a20: ~(Deleted)
         -   Entity:
                 Id: d14e1602-f4bd-4f16-a264-e210b9bd3e21
@@ -40,4 +41,5 @@ Hierarchy:
                     f49490563262fb53ed9f60700f450ebe: !Happenstance.SE.DevConsole.ConsoleUI
                         Id: 838c14a2-aaa5-400c-89cc-94e3c492edc4
                         StartDisabled: false
+                        CollisionDetection: false
                     8d959dd498e88e6d92ef75aef2db651e: ~(Deleted)
