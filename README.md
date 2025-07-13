@@ -42,8 +42,8 @@ HS Dev Console transforms your game into a controllable, scriptable environment.
 
 ```csharp
 // Get references to the dev tools
-var devEditorManager = EntityFinder.FindAllComponents<DevEditorManager>().FirstOrDefault();
-var devCamera = EntityFinder.FindAllComponents<DevCamera>().FirstOrDefault();
+var devEditorManager = Entity.Scene.FindAllComponents_HS<DevEditorManager>().FirstOrDefault();
+var devCamera = Entity.Scene.FindAllComponents_HS<DevCamera>().FirstOrDefault();
 
 // Check before processing your input
 if (!devEditorManager?.DevEditorActive && !devCamera?.DevCameraActive)
@@ -210,7 +210,7 @@ public class GameCommands : HSSyncScript
     
     public override void OnStart()
     {
-        _console = EntityFinder.FindAllComponents<ConsoleManager>().FirstOrDefault();
+        _console = Entity.Scene.FindAllComponents_HS<ConsoleManager>().FirstOrDefault();
         RegisterGameCommands();
     }
     
@@ -295,7 +295,7 @@ public class DebugCommands : HSSyncScript
 {
     public override void OnStart()
     {
-        var console = EntityFinder.FindAllComponents<ConsoleManager>().FirstOrDefault();
+        var console = Entity.Scene.FindAllComponents_HS<ConsoleManager>().FirstOrDefault();
         RegisterDebugCommands(console);
     }
     
@@ -449,8 +449,8 @@ public class GameManagerCommands : HSSyncScript
     
     public override void OnStart()
     {
-        _gameManager = EntityFinder.FindAllComponents<GameManager>().FirstOrDefault();
-        _console = EntityFinder.FindAllComponents<ConsoleManager>().FirstOrDefault();
+        _gameManager = Entity.Scene.FindAllComponents_HS<GameManager>().FirstOrDefault();
+        _console = Entity.Scene.FindAllComponents_HS<ConsoleManager>().FirstOrDefault();
         
         RegisterGameManagementCommands();
     }
@@ -498,7 +498,7 @@ public class SpawnCommands : HSSyncScript
     
     private void RegisterSpawnCommands()
     {
-        var console = EntityFinder.FindAllComponents<ConsoleManager>().FirstOrDefault();
+        var console = Entity.Scene.FindAllComponents_HS<ConsoleManager>().FirstOrDefault();
         
         // Basic spawn
         console.RegisterConsoleCommand(
