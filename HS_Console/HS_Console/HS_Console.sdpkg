@@ -1,0 +1,21 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: HS_Console
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir Assets
+    -   Path: !dir Effects
+    -   Path: !dir Assets
+    -   Path: !dir Assets
+    -   Path: !dir E:/Github/HS-Stride-Dev-Console/HS_Console/HS_Console/Assets
+ResourceFolders:
+    - !dir Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets: []

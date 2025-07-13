@@ -22,7 +22,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: inputBackground
                 Source: !SpriteFromSheet
-                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/Dev Console/Source/console_sprite_sheet
                     CurrentFrame: 2
                 Color: {R: 255, G: 255, B: 255, A: 255}
                 StretchType: Fill
@@ -40,7 +40,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: Console Window
                 Source: !SpriteFromSheet
-                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/Dev Console/Source/console_sprite_sheet
                     CurrentFrame: 3
                 Color: {R: 255, G: 255, B: 255, A: 255}
                 StretchType: Fill
@@ -136,13 +136,13 @@ Hierarchy:
                 Name: submitButton
                 Content: !TextBlock ref!! 3ce371cd-15d2-4e6a-8034-939dcadbe4a7
                 PressedImage: !SpriteFromSheet
-                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/Dev Console/Source/console_sprite_sheet
                     CurrentFrame: 3
                 NotPressedImage: !SpriteFromSheet
-                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/Dev Console/Source/console_sprite_sheet
                     CurrentFrame: 3
                 MouseOverImage: !SpriteFromSheet
-                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/DevConsole/Source/console_sprite_sheet
+                    Sheet: ae514c03-06d4-4c27-b40b-e5c5fe0a711a:Happenstance/Dev Console/Source/console_sprite_sheet
                     CurrentFrame: 3
         -   UIElement: !Grid
                 Id: fed06728-64f0-4f23-8128-8e452dc6c11c

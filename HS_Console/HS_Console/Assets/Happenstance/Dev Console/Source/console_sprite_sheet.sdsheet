@@ -7,28 +7,28 @@ ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
 Packing: {}
 Sprites:
     2ffa85c74e6f0818ff7d10354f2b6225:
-        Source: !file ../../Dev Console/Source/Textures/console_x_btn.png
+        Source: ../../../../Resources/HS-Stride-Dev-Console/dev_console/console_x_btn.png
         Name: console_x_btn
         TextureRegion: {X: 0, Y: 0, Width: 15, Height: 17}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}
     f056aed0fcb3ce494b61ac0e0212c6ea:
-        Source: !file ../../Dev Console/Source/Textures/console_submit_btn.png
+        Source: ../../../../Resources/HS-Stride-Dev-Console/dev_console/console_submit_btn.png
         Name: console_submit_btn
         TextureRegion: {X: 0, Y: 0, Width: 93, Height: 34}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}
     16f8bc283db37156815d691f501aae6b:
-        Source: !file ../../Dev Console/Source/Textures/console_input.png
+        Source: ../../../../Resources/HS-Stride-Dev-Console/dev_console/console_input.png
         Name: console_input
         TextureRegion: {X: 0, Y: 0, Width: 517, Height: 34}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}
     1ac0a59119928c43631a507a6ecb2406:
-        Source: !file ../../Dev Console/Source/Textures/console_window.png
+        Source: ../../../../Resources/HS-Stride-Dev-Console/dev_console/console_window.png
         Name: console_window
         TextureRegion: {X: 0, Y: 0, Width: 614, Height: 194}
         Center: {X: 0.0, Y: 0.0}

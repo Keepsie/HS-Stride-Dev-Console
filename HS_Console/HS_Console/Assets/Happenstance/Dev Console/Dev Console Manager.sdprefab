@@ -34,7 +34,7 @@ Hierarchy:
                     160412c9361dbc87b58f91ff7246d050: !UIComponent
                         Id: 6c0f0171-0213-4eaf-a85b-abdae232192b
                         Enabled: false
-                        Page: e57146fa-d5cc-4b58-832d-9afde81625b4:Happenstance/Dev Console/Source/Dev Console
+                        Page: e57146fa-d5cc-4b58-832d-9afde81625b4:Happenstance/Dev Console/Source/dev_console_page
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
                     f49490563262fb53ed9f60700f450ebe: !Happenstance.SE.DevConsole.ConsoleUI

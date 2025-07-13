@@ -27,7 +27,7 @@ namespace Happenstance.SE.DevConsole
         public event Action<string, MessageType> OnConsoleOutput;
         public event Action OnClearConsole;
 
-        public override void OnAwake()
+        protected override void OnAwake()
         {
             // Only enable in debug builds or editor
 #if DEBUG
@@ -42,9 +42,9 @@ namespace Happenstance.SE.DevConsole
             }
         }
 
-        public override void OnStart()
+        protected override void OnStart()
         {
-            _consoleUIEntity = EntityFinder.FindChildByName(Entity, "DevConsoleUI");
+            _consoleUIEntity = Entity.FindChildByName_HS("DevConsoleUI");
 
             if (_consoleUIEntity == null)
             {
@@ -55,7 +55,7 @@ namespace Happenstance.SE.DevConsole
             DisplayConsoleInfo();
         }
 
-        public override void OnUpdate()
+        protected override void OnUpdate()
         {
             if (Input.IsKeyPressed(Keys.OemTilde)) // Backtick key
             {

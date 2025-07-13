@@ -26,8 +26,6 @@ namespace Happenstance.SE.DevConsole
     public class ConsoleUI : HSSyncScript
     {
         private ConsoleManager _consoleManager;
-
-        private UIPage _uiPage;
         private SpriteFont _consoleFont;
         private ScrollViewer _scrollViewer;
         private StackPanel _consoleStack;
@@ -36,9 +34,9 @@ namespace Happenstance.SE.DevConsole
         public MouseOverState MouseOverState { get; }
 
 
-        public override void OnStart()
+        protected override void OnStart()
         {
-            _consoleManager = EntityFinder.FindAllComponents<ConsoleManager>().FirstOrDefault();
+            _consoleManager = Entity.Scene.FindAllComponents_HS<ConsoleManager>().FirstOrDefault();
             if (_consoleManager == null)
             {
                 Logger.Error("Could not find ConsoleManager");
@@ -59,56 +57,54 @@ namespace Happenstance.SE.DevConsole
                 Logger.Error($"Failed to load sprite font: {ex.Message}");
             }
 
-            _uiPage = Entity.Get<UIComponent>().Page;
-            if (_uiPage != null)
+           
+                
+            _consoleStack = Entity.GetUIElement_HS<StackPanel>("consoleStack");
+            if (_consoleStack == null)
             {
-                
-                _consoleStack = EntityFinder.GetUIElement<StackPanel>(_uiPage, "consoleStack");
-                if (_consoleStack == null)
-                {
-                    Logger.Error("Console stack panel not found");
-                    return;
-                }
-
-                _inputBlock = EntityFinder.GetUIElement<EditText>(_uiPage, "consoleInput");
-                if (_inputBlock == null)
-                {
-                    Logger.Error("Console input text block not found");
-                    return;
-                }
-
-                _submitButton = EntityFinder.GetUIElement<Button>(_uiPage, "submitButton");
-                if (_submitButton == null)
-                {
-                    Logger.Error("Console submit button not found");
-                    return;
-                }
-
-                _scrollViewer = EntityFinder.GetUIElement<ScrollViewer>(_uiPage, "consoleScroll");
-                if (_scrollViewer != null)
-                {
-                    _scrollViewer.ScrollMode = ScrollingMode.Vertical;
-                    _scrollViewer.TouchScrollingEnabled = true;
-
-                    // Force scroll bar to be always visible (Doesn't work looks like source is force hiding in a update)
-                    var alwaysVisibleColor = new Color(0.7f, 0.7f, 0.7f, 1.0f);
-                    _scrollViewer.ScrollBarColor = alwaysVisibleColor;
-                    
-                    var field = typeof(ScrollViewer).GetField("transparent", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
-                    if (field != null)
-                    {
-                        field.SetValue(null, alwaysVisibleColor);
-                    }
-                }
-                
-                _submitButton.Click += OnSubmitClick;
+                Logger.Error("Console stack panel not found");
+                return;
             }
+
+            _inputBlock = Entity.GetUIElement_HS<EditText>("consoleInput");
+            if (_inputBlock == null)
+            {
+                Logger.Error("Console input text block not found");
+                return;
+            }
+
+            _submitButton = Entity.GetUIElement_HS<Button>("submitButton");
+            if (_submitButton == null)
+            {
+                Logger.Error("Console submit button not found");
+                return;
+            }
+
+            _scrollViewer = Entity.GetUIElement_HS<ScrollViewer>("consoleScroll");
+            if (_scrollViewer != null)
+            {
+                _scrollViewer.ScrollMode = ScrollingMode.Vertical;
+                _scrollViewer.TouchScrollingEnabled = true;
+
+                // Force scroll bar to be always visible (Doesn't work looks like source is force hiding in a update)
+                var alwaysVisibleColor = new Color(0.7f, 0.7f, 0.7f, 1.0f);
+                _scrollViewer.ScrollBarColor = alwaysVisibleColor;
+                    
+                var field = typeof(ScrollViewer).GetField("transparent", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic);
+                if (field != null)
+                {
+                    field.SetValue(null, alwaysVisibleColor);
+                }
+            }
+                
+            _submitButton.Click += OnSubmitClick;
+            
             
             // Hide console initially
             SetActive(false);
         }
 
-        public override void OnUpdate()
+        protected override void OnUpdate()
         {
              HandleConsoleInput();
             
@@ -303,17 +299,17 @@ namespace Happenstance.SE.DevConsole
             }
         }
 
-        public override void OnEnable()
+        protected override void OnEnable()
         {
             FocusInputField();
         }
 
-        public override void OnDisable()
+        protected override void OnDisable()
         {
             ClearInputField();
         }
 
-        public override void OnDestroy()
+        protected override void OnDestroy()
         {
             if (_submitButton != null)
                 _submitButton.Click -= OnSubmitClick;

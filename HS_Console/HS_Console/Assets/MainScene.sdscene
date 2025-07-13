@@ -1,0 +1,177 @@
+!SceneAsset
+Id: a81ec0d6-1822-44bb-b3a8-74c8d7935c1d
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! ebb50118-6d0d-4c6c-8789-8ac977a95bc8
+        - ref!! 679294e4-3114-4639-b478-b965a5916c6a
+        - ref!! 489f1d06-9b4b-42a2-8e97-8ffe93ed8b43
+        - ref!! 4d139c2a-95d3-4de4-933a-749fdfdfa9c8
+        - ref!! bcb12fab-4c1e-41ad-8fd8-6071e3e39745
+        - ref!! 97e74577-6413-4ec0-84fb-0961a497fda3
+        - ref!! 63890c82-2f7f-4dcd-ad65-df56c01481b0
+    Parts:
+        -   Entity:
+                Id: 489f1d06-9b4b-42a2-8e97-8ffe93ed8b43
+                Name: Directional light
+                Components:
+                    080a1baf9f6e2f86e14a4a7089f1a968: !TransformComponent
+                        Id: 7a7af6a3-9687-4f12-a081-2080d7ee5c0b
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b9853d07196cb72d9f416843e3864e9e: !LightComponent
+                        Id: 71cfe252-ce3a-41c3-9b56-2573e77b0deb
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: 4d139c2a-95d3-4de4-933a-749fdfdfa9c8
+                Name: Skybox
+                Components:
+                    6591d45b77e4da3e455aba18a14a478f: !TransformComponent
+                        Id: ad68c85a-f60b-4d3c-9595-d507ea964116
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    25bc324ea6ceb7586757aa62cd30614e: !BackgroundComponent
+                        Id: 11d59a5a-8710-4c22-8cbc-bcede14a4451
+                        Texture: 9682935f-4e55-4738-bd30-f466ff8e1011:Skybox texture
+                    07c9750700a5722a1fc0880c8438c4e5: !LightComponent
+                        Id: 22892538-29f1-46bb-a3bb-f000e97685e9
+                        Type: !LightSkybox
+                            Skybox: bbb5a246-e383-4e32-8ca7-fb92e22fe610:Skybox
+        -   Entity:
+                Id: 5274f6bc-53e6-45cc-96c2-f6aa60ec8af7
+                Name: Dev Console Manager
+                Components:
+                    59c17e2ae7f9eee58dbb9b9646e77568: !TransformComponent
+                        Id: faff020c-0ac7-47c6-aaa9-52ece1e689b8
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            8c813224184505bbbe9896103afa139d: ref!! f5ac1a22-d986-453d-8876-83f0e3640f38
+                    eae540219a4858089b5bc9d939ecf027: !Happenstance.SE.DevConsole.ConsoleManager
+                        Id: 1d0014f4-2f6c-483a-ab14-0d7e09480e25
+                        StartDisabled: false
+                        CollisionDetection: false
+            Base:
+                BasePartAsset: 7285db21-781a-4f48-af5d-ad064bc3d7df:Happenstance/Dev Console/Dev Console Manager
+                BasePartId: 454fa16d-859b-4776-a6b4-5c9374f7a075
+                InstanceId: bc1de31c-6753-432f-a28d-245847bea650
+        -   Entity:
+                Id: 63890c82-2f7f-4dcd-ad65-df56c01481b0
+                Name: Dev Console Manager
+                Components:
+                    07c236dfe451b3fca0eb6077477dea3c: !TransformComponent
+                        Id: 85de19b5-2d2f-4664-8745-7ef88cc69758
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ba5b2cc925825cf5feb4778772b26bf9: ref!! faff020c-0ac7-47c6-aaa9-52ece1e689b8
+        -   Entity:
+                Id: 679294e4-3114-4639-b478-b965a5916c6a
+                Name: Camera
+                Components:
+                    496cb36d64dac81b15d4f26a5522e659: !TransformComponent
+                        Id: 8fc17595-71f4-4600-a995-7ab6b5d220ce
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b7c20c8e9245f0f6c39fe13a6549f33a: !CameraComponent
+                        Id: e2e308c8-6286-4c23-a87a-e031d163ffa1
+                        Name: null
+                        Projection: Perspective
+                        Slot: a715ed1e-81b3-4b29-a689-d641e67320d7
+                    9de594a0716a54f46a0f951b29985caa: !HS_Console.BasicCameraController,HS_Console
+                        Id: 6d03e5e9-f951-48d9-9d1f-7a3d9f84da21
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 91029dba-5ea9-4d81-af50-4cb124ebe9f0
+                Name: DevConsoleUI
+                Components:
+                    aaf6f90586685888f14e1c72b6bd0e84: !TransformComponent
+                        Id: f5ac1a22-d986-453d-8876-83f0e3640f38
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    160412c9361dbc87b58f91ff7246d050: !UIComponent
+                        Id: 0ac52cda-8d39-4fbf-aebe-679ed91cdc03
+                        Enabled: false
+                        Page: e57146fa-d5cc-4b58-832d-9afde81625b4:Happenstance/Dev Console/Source/dev_console_page
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    f49490563262fb53ed9f60700f450ebe: !Happenstance.SE.DevConsole.ConsoleUI
+                        Id: 93cae086-19bc-4f35-94d0-36926f643c26
+                        StartDisabled: false
+                        CollisionDetection: false
+            Base:
+                BasePartAsset: 7285db21-781a-4f48-af5d-ad064bc3d7df:Happenstance/Dev Console/Dev Console Manager
+                BasePartId: d14e1602-f4bd-4f16-a264-e210b9bd3e21
+                InstanceId: bc1de31c-6753-432f-a28d-245847bea650
+        -   Entity:
+                Id: 97e74577-6413-4ec0-84fb-0961a497fda3
+                Name: Sphere
+                Components:
+                    17772cc12989563f50f09a90a11c4624: !TransformComponent
+                        Id: c3dd9a0f-986a-4ec2-9e38-8366b5bc0b5d
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d694be907cfc7f101a3c1c00a0fd7084: !ModelComponent
+                        Id: 6387d2a1-8bb3-4e06-9f9f-b2e2abae6787
+                        Model: 6df2b0e8-f478-42a7-acda-467e055ed84b:Sphere
+                        Materials: {}
+        -   Entity:
+                Id: bcb12fab-4c1e-41ad-8fd8-6071e3e39745
+                Name: Ground
+                Components:
+                    db1f4dbf225e6a100fe528397d78a081: !TransformComponent
+                        Id: 69ee318e-aeec-4dcb-8f9b-89b35ebb5034
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9c4830e9168248ab0cd4cbcf3e9583eb: !ModelComponent
+                        Id: d479c464-7102-4408-ab77-08b1a03d32a0
+                        Model: f863359d-e42b-47ef-a6ef-d1c6729173f3:Ground
+                        Materials: {}
+        -   Entity:
+                Id: ebb50118-6d0d-4c6c-8789-8ac977a95bc8
+                Name: HS Logger
+                Components:
+                    801f080c20d206eb499704bcb30d9734: !TransformComponent
+                        Id: 7251f343-8a8c-493c-aeaa-ff8972145ab0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5076b49163a07aef14963a9ec921c673: !Happenstance.SE.Logger.Core.HSLogger,HS_Console
+                        Id: d70b4d14-1966-450e-9775-e5dda9f7bce7
+                        DebugMode: true
