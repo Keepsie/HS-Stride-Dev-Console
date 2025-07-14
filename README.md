@@ -1,5 +1,5 @@
 # HS Stride Dev Console
-A in-game command-line interface for Stride Engine that enables custom commands, automated scripting, debugging workflows, and rapid development iteration.
+In-game developer console for Stride Game Engine. Execute custom commands, run automated scripts, debug gameplay, and modify game state without stopping or rebuilding.
 
 ## 🎯 Overview
 
@@ -522,12 +522,6 @@ public class SpawnCommands : HSSyncScript
     }
 }
 ```
-
-## 🤝 Contributing
-
-Create your own command extensions and share them! The modular design makes it easy to package and distribute command sets.
-
-By submitting a pull request, you agree to license your contribution under the MIT License.
 
 ## 📄 License
 
