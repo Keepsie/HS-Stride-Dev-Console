@@ -13,6 +13,12 @@ namespace Happenstance.SE.DevConsole
         private Entity _consoleUIEntity;
         private bool _isConsoleActive;
 
+        /// <summary>
+        /// Indicates whether the development console is currently active and handling input.
+        /// When true, game input systems should be disabled to prevent conflicts.
+        /// </summary>
+        public bool DevConsoleActive => _isConsoleActive;
+
 
         private CommandParser _commandParser;
         private CommandExecutor _commandExecutor;
@@ -21,7 +27,7 @@ namespace Happenstance.SE.DevConsole
         private ScriptExecutor _scriptExecutor;
         private PredefinedCommands _predefinedCommands;
 
-        public string ConsoleVersion { get; } = "1.1.0";
+        public string ConsoleVersion { get; } = "1.2.0";
         public bool IsDebugBuild { get; private set; }
 
         public event Action<string, MessageType> OnConsoleOutput;
