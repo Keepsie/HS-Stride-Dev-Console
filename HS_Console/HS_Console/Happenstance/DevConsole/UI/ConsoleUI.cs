@@ -101,7 +101,7 @@ namespace Happenstance.SE.DevConsole
             
             
             // Hide console initially
-            SetActive(false);
+            Entity.SetActive_HS(false);
         }
 
         protected override void OnUpdate()
