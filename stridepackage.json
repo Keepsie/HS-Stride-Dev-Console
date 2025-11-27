@@ -1,14 +1,14 @@
 {
   "name": "HS-Stride-Dev-Console",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A in-game command-line interface for Stride Engine that enables custom commands",
   "author": "Happenstance Games",
   "tags": [
     "dev-tools"
   ],
-  "stride_version": "4.2.0\u002B",
-  "created": "2025-06-17T14:55:50Z",
-  "download_url": "https://github.com/Keepsie/HS-Stride-Dev-Console/releases/download/1.1.0/HS-Stride-Dev-Console-1.1.0.stridepackage",
+  "stride_version": "4.2.0+",
+  "created": "2025-11-27T15:52:01Z",
+  "download_url": "https://github.com/Keepsie/HS-Stride-Dev-Console/releases/download/1.2.0/HS-Stride-Dev-Console-1.2.0.stridepackage",
   "homepage": "https://github.com/Keepsie/HS-Stride-Dev-Console",
   "repository": "https://github.com/Keepsie/HS-Stride-Dev-Console",
   "license": "MIT"
